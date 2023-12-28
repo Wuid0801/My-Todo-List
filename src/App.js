@@ -6,7 +6,7 @@ function App() {
   const [input, setInput] = useState(''); 
   const [detail, setDetail] = useState([
     { id: 1, detail: "리액트를 배워봅시다." },
-    { id: 2, detail: "리액트를 배워봅시다." }
+    { id: 2, detail: "운동하기" }
   ]);
 
   const clickAddButtonHandler = () => {
@@ -30,7 +30,7 @@ function App() {
           />
           <button onClick={clickAddButtonHandler}>추가</button>
         </div>
-        <h1>ToDo 목록</h1>
+        <h1>ToDo List</h1>
       </div>
       <div className='detail-style'>
         {detail.map((event) => (
